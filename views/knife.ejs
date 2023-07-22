@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link  rel="stylesheet" href="styles/knife.css">
+</head>
+<body>
+    
+    <h1>МОИ НОЖИ</h1>
+    <p><a href="home"><h1><i>На главную</i></h1></a></p>
+    
+    <div class="con1">
+        <img src="images/1.jpg" width="100%" class="img">
+    </div>
+    <div class="con1">
+        <img src="images/2.jpg" width="100%" class="img">
+    </div>
+    <div class="con1">
+        <img src="images/3.jpg" width="100%" class="img">
+    </div>
+    <div class="con1">
+        <img src="images/4.jpg" width="100%" class="img">
+    </div>
+    
+    <div id="con2"> 
+        <% for(let i=1; i<rez_mas.length; i++) {%>
+            <h4><%= rez_mas[i][0] + ':' + rez_mas[i][1]%></h4>
+         <%} %>   
+    </div>
+    
+    <div class="con1"></div>
+    <div class="con1"></div>
+    <div class="con1"></div>
+    
+    
+    
+
+
+</body>
+</html>
