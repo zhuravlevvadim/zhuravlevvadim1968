@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link  rel="stylesheet" href="styles/home.css">
+</head>
+
+<body>
+
+    <div class="con1"><h1><i>CON1</i></h1>    </div>
+    <div class="con2"><h1><i>БАРАХОЛКА</i></h1>    </div>
+    <div class="con3"><h1><i>CON3</i></h1>    </div>   
+    <div class="con4">
+        
+        <p><a href="knife"><h2><i>Ножи</i></h2></a></p>
+        <p><a href="crafts"><h2><i>Поделки</i></h2></a></p>
+        <p><a href="icons"><h2><i>Иконы</i></h2></a></p>
+        
+    </div>
+
+        <img class="i" src="images/1.jpg" alt="">
+        <!-- <img class="i" src="images/2.jpg" alt="">
+        <img class="i" src="images/3.jpg" alt="">
+        <img class="i" src="images/4.jpg" alt="">
+        <img class="i" src="images/5.jpg" alt="">
+        <img class="i" src="images/6.jpg" alt="">
+        <img class="i" src="images/7.jpg" alt="">   -->
+
+    </div>    
+    
+    <div class="con6">    
+        <ul>
+            <p><a href="knife"><h2><i>Игрушки</i></h2></a></p>
+            <p><a href="crafts"><h2><i>Электроника</i></h2></a></p>
+            <p><a href="icons"><h2><i>Разное</i></h2></a></p>
+        </ul>
+    </div>
+    
+    <div class="con7"><h1><i>CON7</i></h1>    </div>
+    <div class="con8"><h1><i>CON8</i></h1>    </div>   
+    <div class="con9"><h1><i>CON9</i></h1>    </div>
+     
+
+    
+        
+    
+
+ 
+
+    <script >
+        let images = document.querySelectorAll( '.slyder img')
+        let counter = 0
+    
+        function slider() {
+            images[counter].classList.add("opacity_1")
+            console.log(counter)
+        if (counter==0) { 
+            images[images.length - 1].classList.remove("opacity_1")
+    }   else {
+            images[counter - 1].classList.remove("opacity_1")
+    }
+        counter++  
+        if (counter > images.length - 1) {
+            counter = 0
+    }
+}
+
+let time = setInterval('slider()', 4000)
+
+
+    
+    
+    </script> 
+</body>
+</html>
