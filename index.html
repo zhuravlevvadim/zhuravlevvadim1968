@@ -103,32 +103,7 @@
 
  
 
-    <script >
-
-        let images = document.querySelectorAll( '.con5 img')
-        console.log(images)
-        let counter = 0
     
-        function slider() {
-            images[counter].classList.add("opacity_1")
-            console.log(counter)
-        if (counter==0) { 
-            images[images.length - 1].classList.remove("opacity_1")
-    }   else {
-            images[counter - 1].classList.remove("opacity_1")
-    }
-        counter++  
-        if (counter > images.length - 1) {
-            counter = 0
-    }
-}
-
-let time = setInterval('slider()', 3000)
-
-
-    
-    
-    </script> 
 </body>
 </html>
 
