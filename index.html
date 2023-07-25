@@ -5,44 +5,132 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link  rel="stylesheet" href="icons.css">
+    <link  rel="stylesheet" href="styles/home.css">
 </head>
 
 <body>
 
-    <div class="con1"><h1><i>CON1</i></h1>    </div>
-    <div class="con2"><h1><i>БАРАХОЛКА</i></h1>    </div>
-    <div class="con3"><h1><i>CON3</i></h1>    </div>   
+    <div class="con1">
+        
+        <h3><i>Россия</i></h3> 
+        <h3><i>Пензенская область</i></h3>
+        <h3><i>г. Заречный</i></h3> 
+    
+    </div>
+       
+    <div class="con2">
+        <div class="con2_0">
+
+            <h1><i>БАРАХОЛКА</i></h1>
+
+        </div>
+    </div>
+    
+    <div class="con3">
+
+        <h3><i>отд. 16</i></h3> 
+        <h3><i>2 - я и 3 - я лаб.</i></h3>
+        <h3><i>Водянов Р. Г.</i></h3> 
+    
+
+    </div>   
+    
+    
+    
     <div class="con4">
-        
-        <p><a href="knife"><h2><i>Ножи</i></h2></a></p>
-        <p><a href="crafts"><h2><i>Поделки</i></h2></a></p>
-        <p><a href="icons"><h2><i>Иконы</i></h2></a></p>
-        
+        <div class="con4_0"></div>
+        <div class="con4_1">
+
+            <p><a href="knife"><h2><i>Ножи</i></h2></a></p>
+            <p><a href="crafts"><h2><i>Поделки</i></h2></a></p>
+            <p><a href="icons"><h2><i>Иконы</i></h2></a></p>
+
+        </div>
     </div>
 
+    <div class="con5">
+
         <img class="i" src="images/1.jpg" alt="">
-        <!-- <img class="i" src="images/2.jpg" alt="">
+        <img class="i" src="images/2.jpg" alt="">
         <img class="i" src="images/3.jpg" alt="">
         <img class="i" src="images/4.jpg" alt="">
         <img class="i" src="images/5.jpg" alt="">
         <img class="i" src="images/6.jpg" alt="">
-        <img class="i" src="images/7.jpg" alt="">   -->
+        <img class="i" src="images/7.jpg" alt="">  
 
     </div>    
     
-    <div class="con6">    
-        <ul>
+    <div class="con6"> 
+        <div class="con6_0"></div>
+        <div class="con6_1">
+   
             <p><a href="knife"><h2><i>Игрушки</i></h2></a></p>
-            <p><a href="crafts"><h2><i>Электроника</i></h2></a></p>
+            <p><a href="crafts"><h2><i>Электрон.</i></h2></a></p>
             <p><a href="icons"><h2><i>Разное</i></h2></a></p>
-        </ul>
+
+        </div>    
+     </div>
+    
+    <div class="con7">
+
+        <h3><i>Контактные тел:</i></h3> 
+        <h3><i>Ножи: 8937..............</i></h3>
+        <h3><i>Игрушки: 8927............</i></h3> 
+        
     </div>
     
-    <div class="con7"><h1><i>CON7</i></h1>    </div>
-    <div class="con8"><h1><i>CON8</i></h1>    </div>   
-    <div class="con9"><h1><i>CON9</i></h1>    </div>
+    <div class="con8">
+        <div class="con8_0">
+
+            <h1><i>РАСПРОДАЖА</i></h1>
+
+        </div>
+    </div>   
+    
+    <div class="con9">
+
+        <h3><i>Контактные тел:</i></h3> 
+        <h3><i>Электроника: 8937..........</i></h3>
+        <h3><i>Разное: 8937............</i></h3> 
+
+
+    </div>
      
+
+    
+        
+    
+
+ 
+
+    <script >
+
+        let images = document.querySelectorAll( '.con5 img')
+        console.log(images)
+        let counter = 0
+    
+        function slider() {
+            images[counter].classList.add("opacity_1")
+            console.log(counter)
+        if (counter==0) { 
+            images[images.length - 1].classList.remove("opacity_1")
+    }   else {
+            images[counter - 1].classList.remove("opacity_1")
+    }
+        counter++  
+        if (counter > images.length - 1) {
+            counter = 0
+    }
+}
+
+let time = setInterval('slider()', 3000)
+
+
+    
+    
+    </script> 
+</body>
+</html>
 
     
         
