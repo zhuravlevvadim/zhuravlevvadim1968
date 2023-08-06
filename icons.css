@@ -4,6 +4,13 @@ body, head, html {
     background:  rgb(232, 237, 98);
 }
 
+h3 {
+    font-size: 2vw;
+    line-height: 0;
+    text-align: center;
+}
+
+
 .con1 {
     border: 1px solid rgb(29, 59, 21);
     width: 22%;
