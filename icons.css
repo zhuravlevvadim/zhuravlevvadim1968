@@ -14,17 +14,19 @@ h3 {
 .con1 {
     background-color: aliceblue;
     border: 1px solid rgb(29, 59, 21);
+    border-radius: 10px;
     width: 20%;
     float: left;
     box-sizing: border-box;
     position: relative;
-    margin-left:  2%;
+    margin-left:  4%;
     margin-bottom: 25px;
    
 }
 
 .img {
     width:  100%;
+    border-radius: 10px;
 }
 
 
