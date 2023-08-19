@@ -15,6 +15,9 @@ h1, h2, h4 {
     font-size:  1vw;
     color: rgb(246, 255, 0);
     }
+    .con1, .con2, .con3 {
+        height:  20vw;
+        }
 }    
 
 .con0 {
