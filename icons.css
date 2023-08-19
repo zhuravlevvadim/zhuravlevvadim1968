@@ -13,7 +13,7 @@ h1, h2, h4 {
 @media (min-width: 1015px) and (max-width: 1035px) {
     h1,  h4 {
     font-size:  1vw;
-    color: rgb(246, 255, 250);
+    color: rgb(246, 255, 0);
     }
     con1, .con2, .con3 {
         height:  20vw;
