@@ -200,7 +200,7 @@ h1, h2, h4 {
     opacity: 1
 }
 
-@media (min-width: 650px) and (max-width: 750px) {
+@media (min-width: 1020px) and (max-width: 1030px) {
     h1,  h4 {
     font-size:  1vw;
     color: rgb(246, 255, 250);
