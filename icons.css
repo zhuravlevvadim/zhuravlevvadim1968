@@ -242,7 +242,7 @@ h1, h2, h3, h4 {
 
     }
 
-    @media (max-width: 673px) {
+    @media (max-width: 450px) {
 
         h1, h2, h3, h4 {
             font-size:  1vw;
