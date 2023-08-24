@@ -1,24 +1,22 @@
 html, body, html {
-    width:  100%;   
-    height:  100%;
+    width: 100%;
+    height: 100%;
 }
 
 
-h1, h2, h4 {
+h1, h2, h3, h4 {
     font-size:  1vw;
     color: rgb(0, 21, 255);
 }
 
-
-
 .con0 {
-    width:  100%;
-    height:  49vw;
-    position:  absolute;
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
 }
 
 .con1 {
-    /* background-color: rgb(42, 203, 212); */
+    /* background-color: rgb(138, 203, 206); */
     width:  30%;
     height:  10vw;
     text-align: left;
@@ -28,16 +26,19 @@ h1, h2, h4 {
 }
 
 .con1_0 {
+    /* background-color: rgb(82, 119, 121); */
     width:  50%;
     position: relative ;
     left:  15%;
+    top: 20%;
 }
 
 .con2 {
-    /* background-color: rgb(232, 238, 71); */
+    /* background-color: rgb(234, 237, 145); */
     width:  40%;
     height:  10vw;
-    text-align: center;
+    display: flex;
+    align-items: center;
     float: left;
     box-sizing: border-box;
     position: relative;
@@ -45,17 +46,17 @@ h1, h2, h4 {
 
 .con2_0 {
     background-color: rgb(10, 11, 2);
-    border-radius:  5px;
-    width:  40%;
-    /* height:  30%; */
-    text-align: top;
+    border-radius:  50%;
+    width:  20%;
+    height:  30%;
+    text-align: center;
     position: relative;
-    left:  30%;
-    top: 20%;
+    left:  40%;
+   
 }  
 
 .con3 {
-    /* background-color: rgb(55, 213, 210); */
+    /* background-color: rgb(127, 218, 130); */
     width:  30%;
     height:  10vw;
     text-align: right;
@@ -65,10 +66,11 @@ h1, h2, h4 {
 }   
 
 .con3_0 {
+    /* background-color: rgb(7, 180, 186); */
     width:  50%;
     position: relative ;
     left:  35%;
-
+    top: 20%;
 }
 
 .con4 {
@@ -82,18 +84,18 @@ h1, h2, h4 {
 }  
 
 .con4_0 {
-    background-color: rgb(194, 194, 207);
+    background-color: rgb(40, 53, 232);
     width:  30%;
-    height:  7vw;
+    height:  9vw;
     position:  absolute;
     right:  32%;
-    top:  27%;
+    top:  30%;
 }
 
 .con4_1 {
-    background-color: rgb(200, 234, 10);
+    background-color: rgb(5, 21, 2);
     width:  30%;
-    height:  7vw;
+    height:  9vw;
     position:  absolute;
     right:  35%;
     top:  25%;
@@ -120,18 +122,18 @@ h1, h2, h4 {
 }
 
 .con6_0 {
-    background-color: rgb(153, 153, 165);
+    background-color: rgb(7, 7, 241);
     width:  30%;
-    height:  7vw;
+    height:  9vw;
     position:  absolute;
     right:  32%;
-    top:  27%;
+    top:  30%;
 }
 
 .con6_1 {
-    background-color: rgb(202, 234, 17);
+    background-color: rgb(5, 15, 2);
     width:  30%;
-    height:  7vw;
+    height:  9vw;
     position:  absolute;
     right:  35%;
     top:  25%;
@@ -139,7 +141,7 @@ h1, h2, h4 {
 }
    
 .con7 {
-    /* background-color: rgb(68, 237, 237); */
+    /* background-color: rgb(203, 171, 120); */
     width:  30%;
     height:  10vw;
     text-align: left;
@@ -148,25 +150,35 @@ h1, h2, h4 {
     position: relative;
 }
 
+.con7_0 {
+    /* background-color: rgb(82, 119, 121); */
+    width:  50%;
+    position: relative ;
+    left:  15%;
+    bottom: 10%;
+}
+
+
 .con8 {
-    /* background-color: rgb(231, 226, 80); */
+    /* background-color: rgb(223, 220, 124); */
     width:  40%;
     height:  10vw;
-    text-align: center;
+    display: flex;
+    align-items: center;
     float: left;
     box-sizing: border-box;
     position: relative;
 } 
 
 .con8_0 {
-    background-color: rgb(20, 21, 2);
-    border-radius:  5px;
-    width:  50%;
-    /* height:  30%; */
-    text-align: top;
+    background-color: rgb(10, 11, 2);
+    border-radius:  50%;
+    width:  20%;
+    height:  30%;
+    text-align: center;
     position: relative;
-    left:  30%;
-    top: 20%;
+    left:  40%;
+  
 }  
 
 .con9 {
@@ -177,21 +189,30 @@ h1, h2, h4 {
     float: left;
     box-sizing: border-box;
     position: relative;
-}   
+} 
 
-/* #img {
+.con9_0 {
+    /* background-color: rgb(82, 119, 121); */
+    width:  50%;
+    position: relative ;
+    left: 35%;
+    bottom: 10%;
+}
+
+
+#img {
     width:  100%;
     height:  49vw;
-    position:  relative;
+    position:  absolute;
 }
- */
+
 .i {
     border-radius:  3%;
     width:  100%;
     /* height:  100%; */
     position:  absolute;
-    opacity:  1;
-    transition:  all ease 5s;
+    opacity:  0;
+    transition:  all ease 3s;
     float: left;
         
 }
@@ -201,80 +222,58 @@ h1, h2, h4 {
 }
 
 @media (min-width: 1020px) and (max-width: 1030px) {
+    
     h1,  h4 {
     font-size:  1vw;
-    color: rgb(246, 255, 250);
+    color: rgb(246, 255, 0);
     }
     .con1, .con2, .con3, .con7, .con8, .con9  {
-        height:  15vw;
+        height:  20vw;
         }
+    
+    .con2_0 { 
+         border-radius:  50%;
+         height:  10%;
+        }    
+
     #img {
-        height:  62vw;
+        height:  65vw;
     }
 
     }
 
-@media (max-width: 773px) {
+    @media (max-width: 673px) {
 
-        h1,  h4 {
+        h1, h2, h3, h4 {
             font-size:  1vw;
             color: rgb(13, 255, 0);
             }
         
-        .con1 {
-            order: -9;
-            width: 50%;
-        }
-        .con2 {
-            order: -7;
-            width: 100%;
-        }
-        .con3 {
-            order: -8;
-            width: 50%;
-        }
-        .con4 {
-            order: -4;
-            width: 50%;
-            
-        }
-        .con5 {
-            order: -6;
-            width:  100%;
-            height:  70vw;
-            
-        }
-        .con6 {
-            order: -3;
-            width: 50%;
-        }
-        .con7 {
-            order: -2;
-            width: 50%;
-        }
-        .con8 {
-            order: -5;
-            width: 100%;
-        }
-        .con9 {
-            order: -1;
-            width: 50%;
-        }
-        #img {
-            width:  100%;
-            height:  100vw;
-            position:  absolute;
-        }
+        .con1 { order: -9; width: 50%; }
+        .con1_0 { top: 30%; }
+
+        .con2 { order: -7; width: 100%; }
+        .con2_0 { left: 40%; }
+
+        .con3 { order: -8; width: 50%; }
+        .con3_0 { top: 30%; }
+
+        .con4 { order: -4; width: 50%; }
+
+        .con5 { order: -6; width:  90%; height:  66vw; right: -4%; }
+
+        .con6 { order: -3; width: 50%; }
+
+        .con7 { order: -2; width: 50%; }
+        .con7_0 {bottom: 10%;}
+
+        .con8 { order: -5; width: 100%; }
+
+        .con9 { order: -1; width: 50%; }
+        .con9_0 {bottom: 10%;}
+
+        #img { width:  100%; height:  140vw; position:  absolute; }
         
     }
-
-
-
-
-
-
-
-
-
 
 
